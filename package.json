@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "esbuild --bundle app.ts --outdir=dist --minify --sourcemap --external:puppeteer"
+    "build": "esbuild --bundle app.ts --outdir=dist --minify --sourcemap --external:puppeteer",
+    "looprun": "for i in {1..2000}; do node dist/app.min.js; sleep 150; done"
   },
   "dependencies": {
     "puppeteer": "^3.0.1"
