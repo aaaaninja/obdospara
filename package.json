@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "esbuild --bundle app.ts --outdir=dist --minify --sourcemap --external:puppeteer"
+  },
   "dependencies": {
     "puppeteer": "^3.0.1"
   },
